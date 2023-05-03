@@ -1,0 +1,9 @@
+categories: 
+  - Fasta Manipulation
+  - Fastq Manipulation
+description:  The FastQC tool will do quality control checks on raw sequence data.
+homepage_url: https://github.com/naturalis/galaxy-tool-fastqc-sequence-analysis
+name: naturalis_fastqc
+owner: duijker.d
+remote_repository_url: https://gitlab.com/LCAB-Bioinformatics/galaxy/naturalis/fastqc_jb_naturalis
+type: unrestricted
