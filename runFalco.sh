@@ -29,7 +29,7 @@
 # directory. It will search for the html output file and send this to the
 # expected location. The temporary storage directory is deleted.
 runFalco() {
-    falco -q ${flInput} -o ${strDirectory}_temp
+    falco -f fastq -q ${flInput} -o ${strDirectory}_temp
     strHtmlName=$(find ${strDirectory}_temp -name "*.html" -printf "%f\n")
     cat ${strDirectory}_temp/${strHtmlName} > ${fosOutput}
     rm -rf ${strDirectory}_temp

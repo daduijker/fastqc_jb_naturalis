@@ -9,9 +9,11 @@
     <!-- Call the runFalco script, set input parameters according to user
          choices. -->
     <command interpreter="bash">
+        #if $fisInput.rbInput == "fastq"
+            ln -s $fisInput.fisFastq input.fastq
         runFalco.sh -f ${fisInput.rbInput}
         #if $fisInput.rbInput == "fastq"
-            -i $fisInput.fisFastq -o $fosFastq
+            -i input.fastq -o $fosFastq
         #elif $fisInput.rbInput == "zip"
             -i $fisInput.fisZip -o $fosZip
         #end if
