@@ -40,10 +40,10 @@
     </inputs>
     <outputs>
         <!-- Catch the output file. -->
-        <data format="html" name="fosFastq" label="FastQC_Report">
+        <data format="html" name="fosFastq" label="FastQC_Report fastq">
             <filter>fisInput["rbInput"] == "fastq"</filter>
         </data>
-        <data format="html" name="fosZip" label="FastQC_Report">
+        <data format="html" name="fosZip" label="FastQC_Report zip">
             <filter>fisInput["rbInput"] == "zip"</filter>
         </data>
     </outputs>
